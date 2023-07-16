@@ -5,7 +5,6 @@ function Header() {
     return (
         <header>
         <h1>Ever Muniz</h1>
-        <NavTabs />
         </header>
     );
     }

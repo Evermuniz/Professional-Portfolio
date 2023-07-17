@@ -1,8 +1,9 @@
 import React from "react";
+import './../../styles/Section.css';
 
 export default function AboutMe() {
     return (
-        <div>
+        <div className="section">
             <h1>About Me</h1>
             <p>
                 I am a Full Stack Web Developer with a background in the convenience store industry. 

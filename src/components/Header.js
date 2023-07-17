@@ -1,9 +1,9 @@
 import React from 'react';
-import NavTabs from './Navbar';
+import '../styles/Header.css';
 
 function Header() {
     return (
-        <header>
+        <header className='header'>
         <h1>Ever Muniz</h1>
         </header>
     );

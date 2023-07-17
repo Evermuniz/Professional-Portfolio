@@ -1,8 +1,9 @@
 import React from "react";
+import "./../../styles/Section.css";
 
 export default function Contact() {
     return (
-        <div>
+        <div className="section">
             <form>
                 <div>
                 <input type="text" placeholder="Name" />

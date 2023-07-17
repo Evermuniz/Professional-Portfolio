@@ -1,8 +1,9 @@
 import React from "react";
+import "./../../styles/Section.css";
 
 export default function Resume() {
     return (
-        <div>
+        <div className="section">
             <h1>Resume</h1>
             <p>
                 <a href="">Resume</a>

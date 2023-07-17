@@ -1,5 +1,6 @@
 import React from "react";
 import Project from "../Project";
+import "./../../styles/Section.css";
 
 export default function Portfolio() {
   const projects = [
@@ -42,7 +43,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <div>
+    <div className="section">
       <h1>Portfolio</h1>
       {projects.map((project, index) => (
         <Project

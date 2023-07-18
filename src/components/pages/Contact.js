@@ -1,18 +1,30 @@
 import React from "react";
 import "./../../styles/Section.css";
+import "./../../styles/Form.css";
 
 export default function Contact() {
-    return (
-        <div className="section">
-            <form>
-                <div>
-                <input type="text" placeholder="Name" />
-                <input type="text" placeholder="Email" />
-                <input type="text" placeholder="Message" />
-                <button type="submit">Submit</button>
-                </div>
-            </form>
-        </div>
-    );
+  return (
+    <section className="section">
+        <h1>Contact</h1>
+      <div class="form-box">
+        <form>
+          <div class="info-box">
+            <input type="text" name="" placeholder="Name" required="" />
+          </div>
+          <div class="info-box">
+            <input type="email" name="" placeholder="email" required="yes" />
+          </div>
+          <div class="info-box">
+            <input type="text" name="" placeholder="Message" required="" />
+          </div>
+          <center>
+            <a href="#">
+              SEND
+              <span></span>
+            </a>
+          </center>
+        </form>
+      </div>
+    </section>
+  );
 }
-

@@ -1,14 +1,18 @@
-import './App.css';
+import "./App.css";
 import React from "react";
 import Header from "./components/Header";
 import PortfolioContainer from "./components/PortfolioContainer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      <Header />
+    <section className="d-flex flex-column min-vh-100">
+      <div>
+        <Header />
         <PortfolioContainer />
-    </div>
+      </div>
+      <Footer />
+    </section>
   );
 }
 

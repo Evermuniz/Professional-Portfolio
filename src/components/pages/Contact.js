@@ -8,13 +8,13 @@ export default function Contact() {
         <h1>Contact</h1>
       <div class="form-box">
         <form>
-          <div class="info-box">
+          <div className="info-box">
             <input type="text" name="" placeholder="Name" required="" />
           </div>
-          <div class="info-box">
+          <div className="info-box">
             <input type="email" name="" placeholder="email" required="yes" />
           </div>
-          <div class="info-box">
+          <div className="info-box">
             <input type="text" name="" placeholder="Message" required="" />
           </div>
           <center>

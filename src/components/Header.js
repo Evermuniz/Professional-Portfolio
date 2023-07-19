@@ -1,17 +1,17 @@
 import React from "react";
 import "../styles/Header.css";
-import logo from "../Images/LogoNoText.png";
+import logo from "../Images/Logo.png";
 
 function Header() {
   return (
-    <header className="header row container px-4">
+    <header className="header row container p-3 px-4">
       <div className="col-1 gx-4">
         <a>
-          <img src={logo} alt="Bootstrap" width="50" height="50" />
+          <img src={logo} alt="Bootstrap" width="100" height="100" />
         </a>
       </div>
-      <div className="col-6 justify-content-start ">
-        <h1>Ever Muniz</h1>
+      <div className="col-11 justify-content-start d-flex align-items-center">
+        <h1>Ever <span>Muniz</span></h1>
       </div>
     </header>
   );

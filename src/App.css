@@ -4,3 +4,11 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
+
+.nav a {
+    color: #1ee3e8;
+}
+
+.nav .nav-link.active {
+  color: #ff863b
+}

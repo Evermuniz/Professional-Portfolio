@@ -44,7 +44,7 @@ export default function Portfolio() {
       technologies: "JavaScript, Node.js, Express.js, MongoDB, Mongoose, Heroku",
     },
     {
-      name: "JavaScript Fundamentals Quiz",
+      name: "JavaScript Quiz",
       deployed: "https://evermuniz.github.io/JS-Fundamentals-Quiz/",
       github: "https://github.com/Evermuniz/JS-Fundamentals-Quiz",
       image: testScreenshot,
@@ -54,36 +54,40 @@ export default function Portfolio() {
 
   const projectList = projects.map((project, index) => (
     <div key={index} className="container">
-      <div className="card">
-        <h2>{project.name}</h2>
-        <i className="fas fa-arrow-right"></i>
-        <p>{project.technologies}</p>
-        <div className="pic">
-          <img className="img-fluid"src={project.image} alt={"screenshot"} />
+      <div className="card col p-0 border border-5">
+        <div>
+          <h2 className="ps-2">{project.name}</h2>
+          <img className="img-fluid pic" src={project.image} alt={"screenshot"} />
         </div>
-        <div className="social">
-          <i className="container">
-            <a
-              href={project.deployed}
-              target="_blank"
-              rel="noreferrer"
-              className=" d-flex justify-content-center align-items-center"
-            >
-              <img src={launchLogo} className="pb-2" />
-            </a>
-            <figcaption className="text-center text-dark">Deployed Application</figcaption>
-          </i>
-          <i className="container">
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noreferrer"
-              className=" d-flex justify-content-center align-items-center"
-            >
-              <img src={githubLogo} className="pb-2" />
-            </a>
-            <figcaption className="text-center text-dark">GitHub Repo</figcaption>
-          </i>
+
+        <div className="social row col-2">
+          <div className="d-flex align-items-center">
+            <i className="card1">
+              <a
+                href={project.deployed}
+                target="_blank"
+                rel="noreferrer"
+                className=" d-flex justify-content-center align-items-center link-primary link-underline-opacity-50"
+              >
+                <img src={launchLogo} className="pe-2" />
+                Deployed Application
+              </a>
+            </i>
+          </div>
+
+          <div className="d-flex align-items-center ">
+            <i className="card2">
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+                className=" d-flex justify-content-center align-items-center link-primary link-underline-opacity-50"
+              >
+                <img src={githubLogo} className="pe-2" />
+                GitHub Repository
+              </a>
+            </i>
+          </div>
         </div>
         <button></button>
       </div>

@@ -7,15 +7,10 @@ import "../../styles/Section.css";
 export const Contact = () => {
   const form = useRef();
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   const sendEmail = (e) => {
-    e.preventDefault();
-
     emailjs.sendForm("service_opsr4zk", "template_catxfbs", form.current, "CTXgfX_9a2KvtsvjM").then(
       (result) => {
         console.log(result.text);
-        setIsModalOpen(true);
       },
       (error) => {
         console.log(error.text);
@@ -23,106 +18,94 @@ export const Contact = () => {
     );
   };
 
-  const handleButtonClick = () => {
-    form.current.reset();
-    setIsModalOpen(false);
-  };
-
   const {
     register,
     handleSubmit,
     formState: { errors },
     trigger,
+    reset,
   } = useForm();
 
   const onBlur = async (fieldName) => {
     await trigger(fieldName);
   };
 
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
   const onSubmitHandler = (e) => {
-    e.preventDefault();
-    // Check if the form is valid before submitting
     if (form.current.checkValidity()) {
       sendEmail(e);
+      setShowSuccessMessage(true);
+      reset();
     } else {
-      form.current.reportValidity(); // Display the browser's default validation messages
+      form.current.reportValidity();
     }
   };
 
-
   return (
     <section className="container">
-      <div className={`modal ${isModalOpen ? "show" : ""}`} tabIndex="-1" id="modal">
-        <div className="modal-dialog modal-dialog-centered">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title">Message sent!</h5>
-              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div className="modal-body">
-              <p>Thank you for your message. I will reach out to you within the next 48 hours.</p>
-            </div>
-            <div className="modal-footer">
-              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal" onClick={handleButtonClick}>
-                Close
-              </button>
-            </div>
+      {showSuccessMessage && (
+        <div id="liveAlertPlaceholder">
+          <div className="alert alert-success alert-dismissible" role="alert">
+            <div>Message sent successfully!</div>
+            <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
         </div>
-      </div>
+      )}
 
       <h1 className="d-flex justify-content-center p-4">Contact Me</h1>
 
-      <div className="d-flex justify-content-center container">
-        <form className="form needs-validation" ref={form} onSubmit={onSubmitHandler}>
-          <div className="justify-content-center d-flex mb-3 form-control">
+      <div className="d-flex justify-content-center mb-5">
+        <form className="form needs-validation" ref={form} onSubmit={handleSubmit(onSubmitHandler)}>
+          <div className="mb-3 form-floating">
             <input
-              className="ms-2 w-75"
+              className="form-control"
+              id="floatingInput"
               type="text"
               name="user_name"
-              placeholder="  Name"
+              placeholder="Name"
               {...register("name", {
                 required: true,
               })}
               onBlur={() => onBlur("name")}
             />
-            {errors.name && errors.name.type === "required" && <p className="errorMsg">Name is required.</p>}
+            <label for="floatingInput">Name:</label>
           </div>
+          {errors.name && errors.name.type === "required" && <p className="errorMsg">Name is required.</p>}
 
-          <div className="form-control  mb-3">
-            <label>Email:</label>
+          <div className="form-floating  mb-3">
             <input
+              className="form-control"
+              id="floatingInput"
               type="text"
               name="user_email"
+              placeholder="email"
               {...register("user_email", {
                 required: true,
                 pattern: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
               })}
               onBlur={() => onBlur("user_email")}
             />
-            {errors.user_email && errors.user_email.type === "required" && (
-              <p className="errorMsg">Email is required.</p>
-            )}
-            {errors.user_email && errors.user_email.type === "pattern" && (
-              <p className="errorMsg">Email is not valid.</p>
-            )}
+            <label for="floatingInput">Email:</label>
           </div>
+          {errors.user_email && errors.user_email.type === "required" && <p className="errorMsg">Email is required.</p>}
+          {errors.user_email && errors.user_email.type === "pattern" && <p className="errorMsg">Email is not valid.</p>}
 
-          <div className="justify-content-center d-flex form-control">
+          <div className="form-floating">
             <textarea
+              className="form-control"
               name="message"
-              rows={4}
-              cols={40}
               placeholder="  Message"
               {...register("message", {
                 required: true,
               })}
               onBlur={() => onBlur("message")}
             />
-            {errors.message && errors.message.type === "required" && <p className="errorMsg">Message is required.</p>}
+            <label for="floatingInput">Message: </label>
           </div>
+          {errors.message && errors.message.type === "required" && <p className="errorMsg">Message is required.</p>}
 
-          <button className="d-flex justify-content-center container mt-4 w-50 form-control" type="submit">
+          <button className="d-flex justify-content-center container mt-4 btn form-control" type="submit">
             <div className="svg-wrapper-1">
               <div className="svg-wrapper">
                 <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

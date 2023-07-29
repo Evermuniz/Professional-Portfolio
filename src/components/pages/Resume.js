@@ -1,18 +1,94 @@
 import React from "react";
-import "./../../styles/Section.css";
+import "../../styles/Resume.css"
+import backEnd from "../../Images/database-fill-gear.svg";
+import frontEnd from "../../Images/pc-display.svg";
+import api from "../../Images/arrow-down-up.svg";
+import launch from "../../Images/rocket-takeoff.svg";
 
 export default function Resume() {
-    return (
-        <div className="section">
-            <h1>Resume</h1>
-            <p>
-                <a href="">Resume</a>
-            </p>
-            <ul>
-                <li>Front-End Proficiencies</li>
+  return (
+    <div className="section">
+      <h1>Resume</h1>
 
-                <li>Back-End Proficiencies</li>
-            </ul>
+      <div className="card m-auto resume">
+        <div className="card-body text-center">
+          <a href="../../Images/Muniz, Ever-Resume1024_1 (3).jpg" download={"Ever Muniz Resume"} className="text-decoration-none text-light-emphasis">
+            Download my resume 
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              className="bi bi-file-earmark-arrow-down-fill ms-2"
+              viewBox="0 0 16 16"
+            >
+              <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z" />
+            </svg>
+          </a>{" "}
         </div>
-    );
+      </div>
+
+      <div className="justify-content-center">
+        <div className="card m-auto mb-5 mt-5">
+          <div className="card-header">
+            {" "}
+            <img src={frontEnd} alt="server icon" className="mb-3" />
+            Front-end Proficiencies{" "}
+          </div>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">HTML</li>
+            <li class="list-group-item">CSS</li>
+            <li class="list-group-item">JavaScript</li>
+            <li class="list-group-item">jQuery</li>
+            <li class="list-group-item">React</li>
+            <li class="list-group-item">PWAs</li>
+          </ul>
+        </div>
+
+        <div class="card mb-5 m-auto">
+          <div class="card-header">
+            <img src={backEnd} alt="pc and mobile display icons" className="mb-3" />
+            Back-end Proficiencies{" "}
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Node.js</li>
+            <li class="list-group-item">Express.js</li>
+            <li class="list-group-item">JWT</li>
+            <li class="list-group-item">MySQL</li>
+            <li class="list-group-item">MongoDB</li>
+            <li class="list-group-item">MERN Stack</li>
+          </ul>
+        </div>
+
+        <div class="card m-auto mb-5">
+          <div class="card-header">
+            <img src={api} alt="icon of arrows pointing in opposite directions" className="mb-3" />
+            API Design{" "}
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Client-Server ModelAPI</li>
+            <li class="list-group-item">REST</li>
+            <li class="list-group-item">JSON</li>
+            <li class="list-group-item">AJAX</li>
+            <li class="list-group-item">GraphQL</li>
+          </ul>
+        </div>
+
+        <div class="card m-auto mb-5">
+          <div class="card-header">
+            <img src={launch} alt="icon of rocket" className="mb-3" />
+            Deployment and Delivery{" "}
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Heroku</li>
+            <li class="list-group-item">Git</li>
+            <li class="list-group-item">GitHub Pages</li>
+            <li class="list-group-item">Shell Scripting</li>
+            <li class="list-group-item">Unit Testing</li>
+            <li class="list-group-item">Linting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
 }

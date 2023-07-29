@@ -1,7 +1,7 @@
 :root {
   --bg-color: #e6e5e1;
   --shdow-gray: #d3d3d5;
-  --orange: #09989c;
+  --orange: #9c420a;
 }
 
 * {
@@ -26,8 +26,6 @@ h2 {
 }
 
 .container .card {
-  /* position: relative; */
-  max-height: 400px;
   background-color: #fff;
   overflow: hidden;
   margin-bottom: 40px;
@@ -113,10 +111,3 @@ h2 {
 .container .card:hover .pic {
   filter: grayscale(0);
 }
-
-/* .dr {
-  position: absolute;
-  bottom: 16px;
-  right: 16px;
-  width: 100px;
-} */

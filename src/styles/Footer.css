@@ -31,8 +31,13 @@
   transition-duration: .3s;
 }
 
-.containerThree:hover {
+.containerTwo:hover {
   background-color: #0072b1;
+  transition-duration: .3s;
+}
+
+.containerThree:hover {
+  background-color: #f2740d;
   transition-duration: .3s;
 }
 

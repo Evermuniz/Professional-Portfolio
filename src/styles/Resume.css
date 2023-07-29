@@ -1,0 +1,16 @@
+.card {
+    min-width: 400px;
+}
+
+.icon {
+    width: 10px;
+    height: 10px;
+}
+
+a {
+    font-size: 1.5rem;
+}
+
+.resume {
+    background-color: #004d4f
+}

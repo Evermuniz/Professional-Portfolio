@@ -65,7 +65,7 @@ export default function Portfolio() {
                 href={project.deployed}
                 target="_blank"
                 rel="noreferrer"
-                className=" d-flex justify-content-center align-items-center link-primary link-underline-opacity-50"
+                className=" d-flex justify-content-center align-items-center link-primary link-underline-opacity-50 text-decoration-none"
               >
                 <img src={launchLogo} className="pe-2" />
                 Deployed Application
@@ -73,13 +73,13 @@ export default function Portfolio() {
             </i>
           </div>
 
-          <div className="d-flex align-items-center ">
+          <div className="d-flex align-items-center">
             <i className="card2">
               <a
                 href={project.github}
                 target="_blank"
                 rel="noreferrer"
-                className=" d-flex justify-content-center align-items-center link-primary link-underline-opacity-50"
+                className=" d-flex justify-content-center align-items-center link-primary link-underline-opacity-50 text-decoration-none"
               >
                 <img src={githubLogo} className="pe-2" />
                 GitHub Repository

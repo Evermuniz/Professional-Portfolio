@@ -12,7 +12,7 @@ export default function Resume() {
 
       <div className="card m-auto resume">
         <div className="card-body text-center">
-          <a href="../../Images/Muniz, Ever-Resume1024_1 (3).jpg" download={"Ever Muniz Resume"} className="text-decoration-none text-light-emphasis">
+          <a href="../../Images/Resume.jpg" download="Ever Muniz Resume" className="text-decoration-none text-light-emphasis">
             Download my resume 
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,55 +37,55 @@ export default function Resume() {
           </div>
           <ul className="list-group list-group-flush">
             <li className="list-group-item">HTML</li>
-            <li class="list-group-item">CSS</li>
-            <li class="list-group-item">JavaScript</li>
-            <li class="list-group-item">jQuery</li>
-            <li class="list-group-item">React</li>
-            <li class="list-group-item">PWAs</li>
+            <li className="list-group-item">CSS</li>
+            <li className="list-group-item">JavaScript</li>
+            <li className="list-group-item">jQuery</li>
+            <li className="list-group-item">React</li>
+            <li className="list-group-item">PWAs</li>
           </ul>
         </div>
 
-        <div class="card mb-5 m-auto">
-          <div class="card-header">
+        <div className="card mb-5 m-auto">
+          <div className="card-header">
             <img src={backEnd} alt="pc and mobile display icons" className="mb-3" />
             Back-end Proficiencies{" "}
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Node.js</li>
-            <li class="list-group-item">Express.js</li>
-            <li class="list-group-item">JWT</li>
-            <li class="list-group-item">MySQL</li>
-            <li class="list-group-item">MongoDB</li>
-            <li class="list-group-item">MERN Stack</li>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">Node.js</li>
+            <li className="list-group-item">Express.js</li>
+            <li className="list-group-item">JWT</li>
+            <li className="list-group-item">MySQL</li>
+            <li className="list-group-item">MongoDB</li>
+            <li className="list-group-item">MERN Stack</li>
           </ul>
         </div>
 
-        <div class="card m-auto mb-5">
-          <div class="card-header">
+        <div className="card m-auto mb-5">
+          <div className="card-header">
             <img src={api} alt="icon of arrows pointing in opposite directions" className="mb-3" />
             API Design{" "}
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Client-Server ModelAPI</li>
-            <li class="list-group-item">REST</li>
-            <li class="list-group-item">JSON</li>
-            <li class="list-group-item">AJAX</li>
-            <li class="list-group-item">GraphQL</li>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">Client-Server ModelAPI</li>
+            <li className="list-group-item">REST</li>
+            <li className="list-group-item">JSON</li>
+            <li className="list-group-item">AJAX</li>
+            <li className="list-group-item">GraphQL</li>
           </ul>
         </div>
 
-        <div class="card m-auto mb-5">
-          <div class="card-header">
+        <div className="card m-auto mb-5">
+          <div className="card-header">
             <img src={launch} alt="icon of rocket" className="mb-3" />
             Deployment and Delivery{" "}
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Heroku</li>
-            <li class="list-group-item">Git</li>
-            <li class="list-group-item">GitHub Pages</li>
-            <li class="list-group-item">Shell Scripting</li>
-            <li class="list-group-item">Unit Testing</li>
-            <li class="list-group-item">Linting</li>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">Heroku</li>
+            <li className="list-group-item">Git</li>
+            <li className="list-group-item">GitHub Pages</li>
+            <li className="list-group-item">Shell Scripting</li>
+            <li className="list-group-item">Unit Testing</li>
+            <li className="list-group-item">Linting</li>
           </ul>
         </div>
       </div>

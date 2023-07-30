@@ -1,5 +1,4 @@
 import React from "react";
-import "./../../styles/Section.css";
 import "./../../styles/Portfolio.css";
 import githubLogo from "./../../Images/github.svg";
 import launchLogo from "./../../Images/box-arrow-up-right.svg";
@@ -65,7 +64,7 @@ export default function Portfolio() {
                 href={project.deployed}
                 target="_blank"
                 rel="noreferrer"
-                className=" d-flex justify-content-center align-items-center link-primary link-underline-opacity-50 text-decoration-none"
+                className=" d-flex justify-content-center align-items-center link-primary link-underline-opacity-50 text-decoration-none text-light-emphasis"
               >
                 <img src={launchLogo} className="pe-2" />
                 Deployed Application
@@ -79,7 +78,7 @@ export default function Portfolio() {
                 href={project.github}
                 target="_blank"
                 rel="noreferrer"
-                className=" d-flex justify-content-center align-items-center link-primary link-underline-opacity-50 text-decoration-none"
+                className=" d-flex justify-content-center align-items-center link-primary link-underline-opacity-50 text-decoration-none text-light-emphasis"
               >
                 <img src={githubLogo} className="pe-2" />
                 GitHub Repository
@@ -94,7 +93,7 @@ export default function Portfolio() {
 
   return (
     <section>
-      <h1 className="d-flex justify-content-center p-5">Portfolio</h1>
+      <h1>Portfolio</h1>
       {projectList}
     </section>
   );

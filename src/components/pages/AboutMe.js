@@ -1,5 +1,5 @@
 import React from "react";
-import "./../../styles/Section.css";
+import "./../../styles/AboutMe.css";
 import headshot from "../../Images/headshot.jpeg";
 
 export default function AboutMe() {

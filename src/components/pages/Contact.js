@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import "../../styles/Contact.css";
-import "../../styles/Section.css";
 
 export const Contact = () => {
   const form = useRef();
@@ -53,7 +52,7 @@ export const Contact = () => {
         </div>
       )}
 
-      <h1 className="d-flex justify-content-center p-4">Contact Me</h1>
+      <h1>Contact Me</h1>
 
       <div className="d-flex justify-content-center mb-5">
         <form className="form needs-validation" ref={form} onSubmit={handleSubmit(onSubmitHandler)}>

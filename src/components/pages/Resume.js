@@ -10,15 +10,18 @@ export default function Resume() {
     <div className="section">
       <h1>Resume</h1>
 
-      <div className="card m-auto resume">
+      <div className="card m-auto resume" >
         <div className="card-body text-center">
-          <a href="../../Images/Resume.jpg" download="Ever Muniz Resume" className="text-decoration-none text-light-emphasis">
-            Download my resume 
+          <a
+            href="../../Images/Resume.jpg"
+            download="Ever Muniz Resume"
+            className="text-decoration-none text-light-emphasis"
+          >
+            Download my resume
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
               height="25"
-              fill="currentColor"
               className="bi bi-file-earmark-arrow-down-fill ms-2"
               viewBox="0 0 16 16"
             >

@@ -68,7 +68,7 @@ export const Contact = () => {
               })}
               onBlur={() => onBlur("name")}
             />
-            <label for="floatingInput">Name:</label>
+            <label htmlFor="floatingInput">Name:</label>
           </div>
           {errors.name && errors.name.type === "required" && <p className="errorMsg">Name is required.</p>}
 
@@ -85,7 +85,7 @@ export const Contact = () => {
               })}
               onBlur={() => onBlur("user_email")}
             />
-            <label for="floatingInput">Email:</label>
+            <label htmlFor="floatingInput">Email:</label>
           </div>
           {errors.user_email && errors.user_email.type === "required" && <p className="errorMsg">Email is required.</p>}
           {errors.user_email && errors.user_email.type === "pattern" && <p className="errorMsg">Email is not valid.</p>}
@@ -100,7 +100,7 @@ export const Contact = () => {
               })}
               onBlur={() => onBlur("message")}
             />
-            <label for="floatingInput">Message: </label>
+            <label htmlFor="floatingInput">Message: </label>
           </div>
           {errors.message && errors.message.type === "required" && <p className="errorMsg">Message is required.</p>}
 

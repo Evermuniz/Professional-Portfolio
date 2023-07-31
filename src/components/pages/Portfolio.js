@@ -58,7 +58,7 @@ export default function Portfolio() {
         </div>
 
         <div className="social row col-2">
-          <div className="d-flex align-items-center pb-5">
+          <div className="d-flex align-items-center pb-4">
             <i className="card1">
               <a
                 href={project.deployed}

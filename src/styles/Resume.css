@@ -1,3 +1,5 @@
+/* css for the resume page */
+
 .card {
     min-width: 400px;
 }
@@ -12,5 +14,6 @@ a {
 }
 
 .resume {
-    background-color: #004d4f
+    background-color: #004d4f;
+    cursor: pointer;
 }

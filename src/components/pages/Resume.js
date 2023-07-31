@@ -1,11 +1,29 @@
 import React from "react";
 import "../../styles/Resume.css"
+// icons imported that are used in the cards
 import backEnd from "../../Images/database-fill-gear.svg";
 import frontEnd from "../../Images/pc-display.svg";
 import api from "../../Images/arrow-down-up.svg";
 import launch from "../../Images/rocket-takeoff.svg";
 
 export default function Resume() {
+
+const onButtonClick = () => {
+  fetch("Ever_Muniz_Resume.pdf").then((response) => {
+    response.blob().then((blob) => {
+      // Creating new object of PDF file
+      const fileURL = window.URL.createObjectURL(blob);
+      // Setting various property values
+      let alink = document.createElement("a");
+      alink.href = fileURL;
+      alink.download = "Ever Muniz Resume";
+      alink.click();
+    });
+  });
+};
+
+
+
   return (
     <div className="section">
       <h1>Resume</h1>
@@ -13,8 +31,7 @@ export default function Resume() {
       <div className="card m-auto resume" >
         <div className="card-body text-center">
           <a
-            href="../../Images/Resume.jpg"
-            download="Ever Muniz Resume"
+            onClick={onButtonClick}
             className="text-decoration-none text-light-emphasis"
           >
             Download my resume

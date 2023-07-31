@@ -1,5 +1,6 @@
 import React from "react";
 
+// navbar with code to change styling with the active link
 function NavTabs({ currentPage, handlePageChange }) {
   return (
       <ul className="nav nav-tabs ">

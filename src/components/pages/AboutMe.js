@@ -2,6 +2,7 @@ import React from "react";
 import "./../../styles/AboutMe.css";
 import headshot from "../../Images/headshot.jpeg";
 
+// About Me page 
 export default function AboutMe() {
   return (
     <div className="section">

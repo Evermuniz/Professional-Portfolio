@@ -1,5 +1,6 @@
 import React from "react";
 import "./../../styles/Portfolio.css";
+// all the screenshots used to render the portfolio cardds
 import githubLogo from "./../../Images/github.svg";
 import launchLogo from "./../../Images/box-arrow-up-right.svg";
 import techBlog from "../../Images/techBlog.jpg"
@@ -10,6 +11,7 @@ import weatherDashboard from "../../Images/weatherDashboard.jpg"
 import noteTaker from "../../Images/noteTaker.jpg"
 
 export default function Portfolio() {
+  // the array of objects used to build each individual project in the portfolio page
   const projects = [
     {
       name: "The Tech Blog",
@@ -49,6 +51,7 @@ export default function Portfolio() {
     },
   ];
 
+  // using one component to loop through all the projects in the array above by using the index as a key
   const projectList = projects.map((project, index) => (
     <div key={index} className="container d-flex w-75">
       <div className="card col p-0 border border-5">
@@ -92,6 +95,7 @@ export default function Portfolio() {
   ));
 
   return (
+    // this is what's exported to the app
     <section>
       <h1>Portfolio</h1>
       {projectList}

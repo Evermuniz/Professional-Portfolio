@@ -2,16 +2,19 @@ import React from "react";
 import logo from "../Images/Logo2.png";
 import "../styles/Footer.css";
 
+// the footer that will be used in all pages
 export default function Footer() {
   return (
     <section className="container-fluid mt-auto">
       <footer className="p-2 footer row">
         <div className="col d-flex">
+          {/* custom logo for styling */}
           <a>
             <img src={logo} alt="logo" width="80px" height="80px" />
           </a>
         </div>
 
+{/* svg icons used for the links with custom css styling and animation */}
         <div className="card col justify-content-end">
           <a href="https://github.com/Evermuniz" className="socialContainer containerOne" target="_blank">
             <svg className="socialSvg githubSvg" viewBox="0 0 16 16">

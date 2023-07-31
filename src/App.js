@@ -1,5 +1,6 @@
 import "./App.css";
 import React from "react";
+// importing the header, footer, and the Portfolio Container which will render based on the link
 import Header from "./components/Header";
 import PortfolioContainer from "./components/PortfolioContainer";
 import Footer from "./components/Footer";

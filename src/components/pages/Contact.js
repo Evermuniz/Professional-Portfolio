@@ -1,12 +1,21 @@
 import React, { useRef, useState } from "react";
+
+//form hooks from react
 import { useForm } from "react-hook-form";
+
+//service to send me an email when someone fills out the contact form
 import emailjs from "@emailjs/browser";
 import "../../styles/Contact.css";
 
+//entire contact form to be exported
 export const Contact = () => {
+
+  //useRef hook used to send the current form data to the email service
   const form = useRef();
 
+  //send email function
   const sendEmail = (e) => {
+    //parameters specific to the emailjs sertvice
     emailjs.sendForm("service_opsr4zk", "template_catxfbs", form.current, "CTXgfX_9a2KvtsvjM").then(
       (result) => {
         console.log(result.text);
@@ -17,6 +26,7 @@ export const Contact = () => {
     );
   };
 
+  //all the variables being destructured in useForm to control form submission
   const {
     register,
     handleSubmit,
@@ -25,12 +35,16 @@ export const Contact = () => {
     reset,
   } = useForm();
 
+  //when a user clicks into a field and clicks out, or on blur, then call the trigger variable
   const onBlur = async (fieldName) => {
     await trigger(fieldName);
   };
 
+  //set state to false to control the alert displayed upon successful submission
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
+  //when form is submitted then check the validity, a feature of bootstrap, and if successful then trigger the sendEmail function 
+  //and change the state to display the alert message
   const onSubmitHandler = (e) => {
     if (form.current.checkValidity()) {
       sendEmail(e);
@@ -43,6 +57,8 @@ export const Contact = () => {
 
   return (
     <section className="container">
+
+      {/* the success message that displays depending on state */}
       {showSuccessMessage && (
         <div id="liveAlertPlaceholder">
           <div className="alert alert-success alert-dismissible" role="alert">
@@ -54,6 +70,7 @@ export const Contact = () => {
 
       <h1>Contact Me</h1>
 
+{/* the react form described above and attaching the control functions */}
       <div className="d-flex justify-content-center mb-5">
         <form className="form needs-validation" ref={form} onSubmit={handleSubmit(onSubmitHandler)}>
           <div className="mb-3 form-floating">
@@ -63,13 +80,16 @@ export const Contact = () => {
               type="text"
               name="user_name"
               placeholder="Name"
+              // destructuring the individual field value
               {...register("name", {
                 required: true,
               })}
+              // onBlur validate this field is not empty
               onBlur={() => onBlur("name")}
             />
             <label htmlFor="floatingInput">Name:</label>
           </div>
+          {/* if the field is empty onBlur then display this error message */}
           {errors.name && errors.name.type === "required" && <p className="errorMsg">Name is required.</p>}
 
           <div className="form-floating  mb-3">
@@ -81,12 +101,14 @@ export const Contact = () => {
               placeholder="email"
               {...register("user_email", {
                 required: true,
+                // validate the email is a valid pattern
                 pattern: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
               })}
               onBlur={() => onBlur("user_email")}
             />
             <label htmlFor="floatingInput">Email:</label>
           </div>
+          {/* two error messages, one for an empty field and one for an invalid format */}
           {errors.user_email && errors.user_email.type === "required" && <p className="errorMsg">Email is required.</p>}
           {errors.user_email && errors.user_email.type === "pattern" && <p className="errorMsg">Email is not valid.</p>}
 
@@ -102,8 +124,10 @@ export const Contact = () => {
             />
             <label htmlFor="floatingInput">Message: </label>
           </div>
+          {/* similar to validation on the other fields */}
           {errors.message && errors.message.type === "required" && <p className="errorMsg">Message is required.</p>}
 
+{/* submission button with some custom css for animation and styling */}
           <button className="d-flex justify-content-center container mt-4 btn form-control" type="submit">
             <div className="svg-wrapper-1">
               <div className="svg-wrapper">

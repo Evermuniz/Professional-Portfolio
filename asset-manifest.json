@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Professional-Portfolio/static/css/main.ffc27000.css",
-    "main.js": "/Professional-Portfolio/static/js/main.ed8648f0.js",
+    "main.css": "/Professional-Portfolio/static/css/main.6bef899c.css",
+    "main.js": "/Professional-Portfolio/static/js/main.0aa26c53.js",
     "static/media/become.jpg": "/Professional-Portfolio/static/media/become.acb684528e9340a2a88e.jpg",
     "static/media/techBlog.jpg": "/Professional-Portfolio/static/media/techBlog.de7aba9244d6129febcb.jpg",
     "static/media/weatherDashboard.jpg": "/Professional-Portfolio/static/media/weatherDashboard.a825904a9de27f9459b2.jpg",
@@ -18,11 +18,11 @@
     "static/media/box-arrow-up-right.svg": "/Professional-Portfolio/static/media/box-arrow-up-right.1000047b298cd4d73cd49bbf792a5926.svg",
     "static/media/pc-display.svg": "/Professional-Portfolio/static/media/pc-display.6cb11c01e4f9578cea3bde90074b4c72.svg",
     "static/media/arrow-down-up.svg": "/Professional-Portfolio/static/media/arrow-down-up.94dfb5ff39ed6b69b726a62ec0bf3f48.svg",
-    "main.ffc27000.css.map": "/Professional-Portfolio/static/css/main.ffc27000.css.map",
-    "main.ed8648f0.js.map": "/Professional-Portfolio/static/js/main.ed8648f0.js.map"
+    "main.6bef899c.css.map": "/Professional-Portfolio/static/css/main.6bef899c.css.map",
+    "main.0aa26c53.js.map": "/Professional-Portfolio/static/js/main.0aa26c53.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffc27000.css",
-    "static/js/main.ed8648f0.js"
+    "static/css/main.6bef899c.css",
+    "static/js/main.0aa26c53.js"
   ]
 }

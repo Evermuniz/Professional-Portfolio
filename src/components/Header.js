@@ -6,7 +6,7 @@ import logo from "../Images/Logo.png";
 function Header() {
   return (
     <header className="header row container p-3 px-4">
-      <div className="">
+      <div className="col-1">
         <a>
           <img src={logo} alt="moutains icon" width="100" height="100" />
         </a>

@@ -79,6 +79,13 @@ h2 {
 .container .card .social img {
   display: none;
 }
+.container .card h2 {
+  font-size: 1rem;
+}
+.container {
+  width: 100%;
+  height: fit-content;
+}
  }
 
 

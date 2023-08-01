@@ -53,7 +53,7 @@ export default function Portfolio() {
 
   // using one component to loop through all the projects in the array above by using the index as a key
   const projectList = projects.map((project, index) => (
-    <div key={index} className="container d-flex w-75">
+    <div key={index} className="container d-flex ">
       <div className="card col p-0 border border-5">
         <div>
           <h2 className="ps-2">{project.name}</h2>

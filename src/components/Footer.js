@@ -6,7 +6,7 @@ import "../styles/Footer.css";
 export default function Footer() {
   return (
     <section className="container-fluid mt-auto">
-      <footer className="p-2 footer row">
+      <footer className="footer row">
         <div className="col-sm-2 d-flex">
           {/* custom logo for styling */}
           <a>

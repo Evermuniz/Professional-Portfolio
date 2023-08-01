@@ -71,10 +71,10 @@ h2 {
 
 @media (max-width: 768px) {
  .container .card .social a {
-    font-size: 10px;
+    font-size: 12px;
   }
   .container .card .social {
-    max-width: 158px;
+    min-width: 130px;
   }
 .container .card .social img {
   display: none;

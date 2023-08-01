@@ -5,11 +5,13 @@
     
 }
 
-@media (max-width: 768px) {
+@media (max-width: 567px) {
  .footer img {
     display: none;
   }
  }
+
+
 
 .card {
   width: fit-content;

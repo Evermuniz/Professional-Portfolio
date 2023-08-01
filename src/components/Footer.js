@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <section className="container-fluid mt-auto">
       <footer className="p-2 footer row">
-        <div className="col d-flex">
+        <div className="col-sm-2 d-flex">
           {/* custom logo for styling */}
           <a>
             <img src={logo} alt="logo" width="80px" height="80px" />
@@ -15,7 +15,7 @@ export default function Footer() {
         </div>
 
 {/* svg icons used for the links with custom css styling and animation */}
-        <div className="card col justify-content-end">
+        <div className="card col ">
           <a href="https://github.com/Evermuniz" className="socialContainer containerOne" target="_blank">
             <svg className="socialSvg githubSvg" viewBox="0 0 16 16">
               {" "}

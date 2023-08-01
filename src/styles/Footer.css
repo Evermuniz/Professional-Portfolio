@@ -5,6 +5,12 @@
     
 }
 
+@media (max-width: 768px) {
+ .footer img {
+    display: none;
+  }
+ }
+
 .card {
   width: fit-content;
   height: fit-content;

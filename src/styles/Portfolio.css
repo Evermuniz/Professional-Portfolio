@@ -35,6 +35,9 @@
   .card img {
     max-width: 500px;
   }
+.portfolio a {
+  width: 50%;
+}
 }
 
 @media (max-width: 767px) {

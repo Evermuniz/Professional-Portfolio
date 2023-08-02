@@ -58,16 +58,16 @@ export default function Portfolio() {
         <img src={project.image} className="card-img-top img-fluid screenshot" alt="application screenshot" />
         <div className="card-body ">
           <h5 className="card-title">{project.name}</h5>
-          <div className="row justify-content-evenly text-center mt-4">
-            <div className="row w-50">
-              <a href={project.deployed} className="btn btn-primary">
+          <div className="row justify-content-center d-flex text-center mt-4 grid">
+            <div className="row g-col-3 d-flex justify-content-center">
+              <a href={project.deployed} className="btn btn-primary text-nowrap">
                 <img src={launchLogo} className="me-3" />
                 Application
               </a>
             </div>
 
-            <div className="row w-50">
-              <a href={project.github} className="btn btn-primary">
+            <div className="row g-col-3 mt-3 d-flex justify-content-center">
+              <a href={project.github} className="btn btn-primary text-nowrap">
                 <img src={githubLogo} className="me-3" />
                 GitHub
               </a>

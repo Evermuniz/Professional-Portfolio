@@ -9,17 +9,18 @@
 }
 
 .portfolio .screenshot {
-  margin-top: 5px;
-  padding: 2px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
-
+  padding: 5px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
 
+/* gray out the cards */
 .cardContainer.grayscale {
   filter: grayscale(100%);
   transition: filter 0.1s ease-out;
 }
 
+/* custom animation to remove grayscale on hover */
 .cardContainer:hover {
   filter: none;
 }
@@ -29,19 +30,11 @@
   transition: 0.1s ease-in-out;
 }
 
-/* screen size breakpoints for proper formatting */
+/* screen size breakpoint for proper button formatting */
 
 @media (min-width: 768px) {
-  .card img {
-    max-width: 500px;
-  }
 .portfolio a {
   width: 50%;
 }
 }
 
-@media (max-width: 767px) {
-  .card img {
-    max-width: 300px;
-  }
-}

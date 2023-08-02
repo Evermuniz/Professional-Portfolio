@@ -14,7 +14,7 @@ I built this application for potential employers to learn about me, my work, and
 
 
 ## Usage
-Visit my [website]() to learn about my skills, view applications I have created, contact me, and download my resume. 
+Visit my [website](https://evermuniz.github.io/Professional-Portfolio/) to learn about my skills, view applications I have created, contact me, and download my resume. 
 
 ![Screenshot of the application](./src/Images/appScreenshot.jpeg)
 

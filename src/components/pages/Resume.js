@@ -28,12 +28,9 @@ const onButtonClick = () => {
     <div className="section">
       <h1>Resume</h1>
 
-      <div className="card m-auto resume" >
+      <div className="card m-auto resume mt-5">
         <div className="card-body text-center">
-          <a
-            onClick={onButtonClick}
-            className="text-decoration-none text-light-emphasis"
-          >
+          <a onClick={onButtonClick} className="text-decoration-none text-light-emphasis">
             Download my resume
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +52,7 @@ const onButtonClick = () => {
             <img src={frontEnd} alt="server icon" className="mb-3" />
             Front-end Proficiencies{" "}
           </div>
-          <ul className="list-group list-group-flush">
+          <ul className="list-group list-group-flush rounded">
             <li className="list-group-item">HTML</li>
             <li className="list-group-item">CSS</li>
             <li className="list-group-item">JavaScript</li>
@@ -66,11 +63,7 @@ const onButtonClick = () => {
         </div>
 
         <div className="card mb-5 m-auto">
-          <div className="card-header">
-            <img src={backEnd} alt="pc and mobile display icons" className="mb-3" />
-            Back-end Proficiencies{" "}
-          </div>
-          <ul className="list-group list-group-flush">
+          <ul className="list-group list-group-flush rounded">
             <li className="list-group-item">Node.js</li>
             <li className="list-group-item">Express.js</li>
             <li className="list-group-item">JWT</li>
@@ -78,6 +71,10 @@ const onButtonClick = () => {
             <li className="list-group-item">MongoDB</li>
             <li className="list-group-item">MERN Stack</li>
           </ul>
+          <div className="card-header">
+            <img src={backEnd} alt="pc and mobile display icons" className="mb-3" />
+            Back-end Proficiencies{" "}
+          </div>
         </div>
 
         <div className="card m-auto mb-5">
@@ -85,7 +82,7 @@ const onButtonClick = () => {
             <img src={api} alt="icon of arrows pointing in opposite directions" className="mb-3" />
             API Design{" "}
           </div>
-          <ul className="list-group list-group-flush">
+          <ul className="list-group list-group-flush rounded">
             <li className="list-group-item">Client-Server ModelAPI</li>
             <li className="list-group-item">REST</li>
             <li className="list-group-item">JSON</li>
@@ -95,11 +92,7 @@ const onButtonClick = () => {
         </div>
 
         <div className="card m-auto mb-5">
-          <div className="card-header">
-            <img src={launch} alt="icon of rocket" className="mb-3" />
-            Deployment and Delivery{" "}
-          </div>
-          <ul className="list-group list-group-flush">
+          <ul className="list-group list-group-flush rounded">
             <li className="list-group-item">Heroku</li>
             <li className="list-group-item">Git</li>
             <li className="list-group-item">GitHub Pages</li>
@@ -107,6 +100,10 @@ const onButtonClick = () => {
             <li className="list-group-item">Unit Testing</li>
             <li className="list-group-item">Linting</li>
           </ul>
+          <div className="card-header">
+            <img src={launch} alt="icon of rocket" className="mb-3" />
+            Deployment and Delivery{" "}
+          </div>
         </div>
       </div>
     </div>

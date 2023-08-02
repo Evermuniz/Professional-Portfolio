@@ -9,7 +9,6 @@ import "../../styles/Contact.css";
 
 //entire contact form to be exported
 export const Contact = () => {
-
   //useRef hook used to send the current form data to the email service
   const form = useRef();
 
@@ -43,7 +42,7 @@ export const Contact = () => {
   //set state to false to control the alert displayed upon successful submission
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
-  //when form is submitted then check the validity, a feature of bootstrap, and if successful then trigger the sendEmail function 
+  //when form is submitted then check the validity, a feature of bootstrap, and if successful then trigger the sendEmail function
   //and change the state to display the alert message
   const onSubmitHandler = (e) => {
     if (form.current.checkValidity()) {
@@ -57,7 +56,6 @@ export const Contact = () => {
 
   return (
     <section className="container">
-
       {/* the success message that displays depending on state */}
       {showSuccessMessage && (
         <div id="liveAlertPlaceholder">
@@ -69,10 +67,10 @@ export const Contact = () => {
       )}
 
       <h1>Contact Me</h1>
-      <p className="text-center">Please fill out the form below to contact me.</p>
+      <p className="text-center mt-5">Please fill out the form below to contact me.</p>
 
-{/* the react form described above and attaching the control functions */}
-      <div className="d-flex justify-content-center mb-5">
+      {/* the react form described above and attaching the control functions */}
+      <div className="d-flex justify-content-center my-3">
         <form className="form needs-validation" ref={form} onSubmit={handleSubmit(onSubmitHandler)}>
           <div className="mb-3 form-floating">
             <input
@@ -115,6 +113,7 @@ export const Contact = () => {
 
           <div className="form-floating">
             <textarea
+              rows={3}
               className="form-control h-100"
               name="message"
               placeholder="  Message"
@@ -128,7 +127,7 @@ export const Contact = () => {
           {/* similar to validation on the other fields */}
           {errors.message && errors.message.type === "required" && <p className="errorMsg">Message is required.</p>}
 
-{/* submission button with some custom css for animation and styling */}
+          {/* submission button with some custom css for animation and styling */}
           <button className="d-flex justify-content-center container mt-4 btn form-control" type="submit">
             <div className="svg-wrapper-1">
               <div className="svg-wrapper">

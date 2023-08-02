@@ -48,7 +48,7 @@ const onButtonClick = () => {
         </div>
       </div>
 
-      <div className="justify-content-center">
+      <div className="justify-content-center skills">
         <div className="card m-auto mb-5 mt-5">
           <div className="card-header">
             {" "}

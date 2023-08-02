@@ -3,12 +3,12 @@ import "./../../styles/Portfolio.css";
 // all the screenshots used to render the portfolio cardds
 import githubLogo from "./../../Images/github.svg";
 import launchLogo from "./../../Images/box-arrow-up-right.svg";
-import techBlog from "../../Images/techBlog.jpg"
-import become from "../../Images/become.jpg"
-import jate from "../../Images/jate.jpg"
-import JSQuiz from "../../Images/JSQuiz.jpg"
-import weatherDashboard from "../../Images/weatherDashboard.jpg"
-import noteTaker from "../../Images/noteTaker.jpg"
+import techBlog from "../../Images/techBlog.jpeg";
+import become from "../../Images/become.jpeg";
+import jate from "../../Images/jate.jpeg";
+import JSQuiz from "../../Images/jsQuiz.jpeg";
+import weatherDashboard from "../../Images/weatherDashboard.jpeg";
+import noteTaker from "../../Images/noteTaker.jpeg";
 
 export default function Portfolio() {
   // the array of objects used to build each individual project in the portfolio page
@@ -53,49 +53,32 @@ export default function Portfolio() {
 
   // using one component to loop through all the projects in the array above by using the index as a key
   const projectList = projects.map((project, index) => (
-    <div key={index} className="container d-flex ">
-      <div className="card col p-0 border border-5">
-        <div>
-          <h2 className="ps-2">{project.name}</h2>
-          <img className="img-fluid pic" src={project.image} alt={"screenshot"} />
-        </div>
-
-        <div className="social row col-2">
-          <div className="d-flex align-items-center pb-4">
-            <i className="card1">
-              <a
-                href={project.deployed}
-                target="_blank"
-                rel="noreferrer"
-                className=" d-flex justify-content-center align-items-center link-primary link-underline-opacity-50 text-decoration-none text-light-emphasis"
-              >
-                <img src={launchLogo} className="pe-2" />
-                Deployed Application
+    <div key={index} className="container d-flex justify-content-center pb-4 portfolio">
+      <div className="card cardContainer grayscale row w-50">
+        <img src={project.image} className="card-img-top img-fluid screenshot" alt="application screenshot" />
+        <div className="card-body ">
+          <h5 className="card-title">{project.name}</h5>
+          <div className="row justify-content-evenly text-center mt-4">
+            <div className="row w-50">
+              <a href={project.deployed} className="btn btn-primary">
+                <img src={launchLogo} className="me-3" />
+                Application
               </a>
-            </i>
-          </div>
+            </div>
 
-          <div className="d-flex align-items-center">
-            <i className="card2">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noreferrer"
-                className=" d-flex justify-content-center align-items-center link-primary link-underline-opacity-50 text-decoration-none text-light-emphasis"
-              >
-                <img src={githubLogo} className="pe-2" />
-                GitHub Repository
+            <div className="row w-50">
+              <a href={project.github} className="btn btn-primary">
+                <img src={githubLogo} className="me-3" />
+                GitHub
               </a>
-            </i>
+            </div>
           </div>
         </div>
-        <button></button>
       </div>
     </div>
   ));
 
   return (
-    // this is what's exported to the app
     <section>
       <h1>Portfolio</h1>
       {projectList}

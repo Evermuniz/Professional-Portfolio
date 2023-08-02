@@ -2,24 +2,37 @@
 
 .footer {
     background-color: #9C420A;
-    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5.5rem;
 }
+
+
 
 @media (max-width: 567px) {
  .footer img {
     display: none;
   }
+  .footer .card {
+    justify-content: center;
+  }
+ }
+
+ @media (min-width: 568px) {
+  .footer .card {
+    justify-content: end;
+  }
  }
 
 
 
-.card {
+.footer .card {
   width: fit-content;
   height: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   padding: 15px 15px;
   gap: 20px;
   border: none;

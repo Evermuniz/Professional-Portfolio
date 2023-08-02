@@ -1,143 +1,44 @@
-/* css for all the project cards and the custom animation */
+/* css for all the portfolio cards  */
 
-:root {
-  --bg-color: #e6e5e1;
-  --shdow-gray: #d3d3d5;
-  --orange: #9c420a;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-i {
-  opacity: 0;
-  font-size: 18px;
-  color: #fff;
-  will-change: transform;
-  -webkit-transform: scale(0.1);
-  transform: scale(0.1);
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-h2 {
-  pointer-events: none;
-}
-
-.container .card {
-  background-color: #fff;
-  overflow: hidden;
-  margin-bottom: 40px;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+.portfolio .card {
+  justify-content: center;
+  align-items: center;
+  background-color: #9c420a;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
 
-.container .card h2 {
-  z-index: 99;
-  font-family: "Poppins", sans-serif;
-  position: absolute;
-  bottom: 0;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
-  margin-right: 152px;
-  background-color: #9c420a;
+.portfolio .screenshot {
+  margin-top: 5px;
+  padding: 2px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+
 }
 
-.container .card .pic {
+.cardContainer.grayscale {
   filter: grayscale(100%);
+  transition: filter 0.1s ease-out;
 }
 
-.container .card .social {
-  z-index: 100;
-  height: 100%;
+.cardContainer:hover {
+  filter: none;
 }
 
-@media (min-width: 769px) {
-  .container .card .social a {
-  font-size: 16px;
-}
-.container .card .social {
-  min-width: 158px;
-}
-.container .card .social img {
-  width: 40px;
-  height: 40px;
-}
-}
-
-@media (max-width: 768px) {
- .container .card .social a {
-    font-size: 12px;
-  }
-  .container .card .social {
-    min-width: 130px;
-  }
-.container .card .social img {
-  display: none;
-}
-.container .card h2 {
-  font-size: 1rem;
-}
-.container {
-  width: 100%;
-  height: fit-content;
-}
- }
-
-
-.card1 {
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-
-.card2 {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-
-.container .card .social img {
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-.container .card:hover i {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-.container .card button {
-  position: absolute;
-  right: 14px;
-  bottom: 14px;
-  width: 30px;
-  height: 30px;
-  background-color: var(--orange);
-  border: none;
-  border-radius: 30px;
-  cursor: default;
-  outline: none;
-  transition: all 0.3s ease;
-  mix-blend-mode: hard-light;
-}
-
-.container .card button i {
-  font-size: 3rem;
-}
-
-.container .card:hover button {
-  transform: scale(16.5);
-}
-
-.container .card:hover p {
-  color: #fff;
-}
-
-.container .card:hover .pic {
+.cardContainer:hover {
   filter: grayscale(0);
+  transition: 0.1s ease-in-out;
+}
+
+/* screen size breakpoints for proper formatting */
+
+@media (min-width: 768px) {
+  .card img {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card img {
+    max-width: 300px;
+  }
 }

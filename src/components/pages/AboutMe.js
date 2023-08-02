@@ -2,7 +2,7 @@ import React from "react";
 import "./../../styles/AboutMe.css";
 import headshot from "../../Images/headshot.jpeg";
 
-// About Me page 
+// About Me page
 export default function AboutMe() {
   return (
     <div className="section">
@@ -11,14 +11,16 @@ export default function AboutMe() {
         <img src={headshot} alt="Ever Muniz" />
       </figure>
 
-      <p>
-        I am a Full Stack Web Developer with a background in software and people management within the convenience store
-        industry. Committed to continuous learning and adept at problem-solving, I graduated from the University of Utah
-        Coding Bootcamp. My technical expertise includes proficiency in HTML, CSS, JavaScript, Node.js, Express.js,
-        MySQL, MongoDB, and React.js. Additionally, I am currently pursuing my undergraduate degree in Chemical
-        Engineering at the University of Utah. Outside of my professional pursuits, I take pleasure in immersing myself
-        in Utah's picturesque outdoors.
-      </p>
+      <div className="d-flex justify-content-center">
+        <p className="text-center w-50 mt-5">
+          I am a Full Stack Web Developer with a background in software and people management within the convenience
+          store industry. Committed to continuous learning and adept at problem-solving, I graduated from The University
+          of Utah Coding Bootcamp. My technical expertise includes proficiency in both front- and back-end web
+          development. Additionally, I am currently pursuing an undergraduate degree in Chemical Engineering at The
+          University of Utah. Outside of my professional pursuits, I take pleasure in immersing myself in Utah's
+          picturesque outdoors.
+        </p>
+      </div>
     </div>
   );
 }

@@ -69,6 +69,7 @@ export const Contact = () => {
       )}
 
       <h1>Contact Me</h1>
+      <p className="text-center">Please fill out the form below to contact me.</p>
 
 {/* the react form described above and attaching the control functions */}
       <div className="d-flex justify-content-center mb-5">
@@ -114,7 +115,7 @@ export const Contact = () => {
 
           <div className="form-floating">
             <textarea
-              className="form-control"
+              className="form-control h-100"
               name="message"
               placeholder="  Message"
               {...register("message", {

@@ -7,15 +7,14 @@ export default function Footer() {
   return (
     <section className="container-fluid mt-auto">
       <footer className="footer row">
-        <div className="col-sm-2 d-flex">
+        <div className="col-sm-2 d-flex align-items-center ">
           {/* custom logo for styling */}
-          <a>
-            <img src={logo} alt="logo" width="80px" height="80px" />
-          </a>
+
+          <img src={logo} alt="logo" width="70px" height="70px" />
         </div>
 
-{/* svg icons used for the links with custom css styling and animation */}
-        <div className="card col ">
+        {/* svg icons used for the links with custom css styling and animation */}
+        <div className="card col mt-1">
           <a href="https://github.com/Evermuniz" className="socialContainer containerOne" target="_blank">
             <svg className="socialSvg githubSvg" viewBox="0 0 16 16">
               {" "}
@@ -23,13 +22,21 @@ export default function Footer() {
             </svg>
           </a>
 
-          <a href="https://www.linkedin.com/in/ever-muniz-9a2132269/" className="socialContainer containerTwo" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/ever-muniz-9a2132269/"
+            className="socialContainer containerTwo"
+            target="_blank"
+          >
             <svg className="socialSvg linkdinSvg" viewBox="0 0 448 512">
               <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
             </svg>
           </a>
 
-          <a href="https://stackexchange.com/users/29120382/ever-muniz" className="socialContainer containerThree" target="_blank">
+          <a
+            href="https://stackexchange.com/users/29120382/ever-muniz"
+            className="socialContainer containerThree"
+            target="_blank"
+          >
             <svg className="socialSvg stackOverflow" viewBox="0 0 16 16">
               <path d="M12.412 14.572V10.29h1.428V16H1v-5.71h1.428v4.282h9.984z" />
               <path d="M3.857 13.145h7.137v-1.428H3.857v1.428zM10.254 0 9.108.852l4.26 5.727 1.146-.852L10.254 0zm-3.54 3.377 5.484 4.567.913-1.097L7.627 2.28l-.914 1.097zM4.922 6.55l6.47 3.013.603-1.294-6.47-3.013-.603 1.294zm-.925 3.344 6.985 1.469.294-1.398-6.985-1.468-.294 1.397z" />

@@ -9,6 +9,18 @@
     
 }
 
+@media (min-width: 768px) {
+  .form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    width: 90%;
+  }
+}
+
 /* css for the alerts */
 .form p {
     color: red;

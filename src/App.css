@@ -7,6 +7,12 @@
     'Lucida Sans', Arial, sans-serif;
 }
 
+body {
+  min-height: 150vh;
+  position: relative;
+  padding-bottom: 5.5rem;
+}
+
 .nav a {
     color: #1ee3e8;
 }

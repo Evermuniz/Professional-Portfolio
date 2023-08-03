@@ -1,19 +1,28 @@
 /* css for headshot */
-.section img {
-    width: 30%;
-    height: 40%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 400px;
-    max-height: 400px;
-      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+.aboutMe img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
 
 /* css for p text */
-.section p {
-    font-size: 1.2rem;
-    width: 75%;
-    text-align: center;
+.aboutMe p {
+  font-size: 1.2rem;
+  width: 75%;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+    .aboutMe img {
+        width: 60%;
+    }
+}
+
+@media (min-width: 577px) {
+    .aboutMe img {
+        width: 40%;
+    }
 }

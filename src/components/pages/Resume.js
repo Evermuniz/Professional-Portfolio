@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/Resume.css"
+import "../../styles/Resume.css";
 // icons imported that are used in the cards
 import backEnd from "../../Images/database-fill-gear.svg";
 import frontEnd from "../../Images/pc-display.svg";
@@ -7,26 +7,23 @@ import api from "../../Images/arrow-down-up.svg";
 import launch from "../../Images/rocket-takeoff.svg";
 
 export default function Resume() {
-
-const onButtonClick = () => {
-  fetch("Ever_Muniz_Resume.pdf").then((response) => {
-    response.blob().then((blob) => {
-      // Creating new object of PDF file
-      const fileURL = window.URL.createObjectURL(blob);
-      // Setting various property values
-      let alink = document.createElement("a");
-      alink.href = fileURL;
-      alink.download = "Ever Muniz Resume";
-      alink.click();
+  const onButtonClick = () => {
+    fetch("Ever_Muniz_Resume.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Ever Muniz Resume";
+        alink.click();
+      });
     });
-  });
-};
-
-
+  };
 
   return (
-    <div className="section">
-      <h1>Resume</h1>
+    <div className="resumeContainer">
+      <h1 className="mt-5">Resume</h1>
 
       <div className="card m-auto resume mt-5">
         <div className="card-body text-center">

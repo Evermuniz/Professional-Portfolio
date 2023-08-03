@@ -32,9 +32,22 @@
 
 /* screen size breakpoint for proper button formatting */
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 .portfolio a {
   width: 50%;
 }
+
+.cardContainer {
+  width: 70%;
+}
 }
 
+@media (max-width: 768px) {
+  .cardContainer {
+    width: 90%;
+  }
+}
+
+.cardContainer {
+  max-width: 500px;
+}

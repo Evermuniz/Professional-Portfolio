@@ -66,7 +66,7 @@ export const Contact = () => {
         </div>
       )}
 
-      <h1>Contact Me</h1>
+      <h1 className="mt-5">Contact Me</h1>
       <p className="text-center mt-5">Please fill out the form below to contact me.</p>
 
       {/* the react form described above and attaching the control functions */}

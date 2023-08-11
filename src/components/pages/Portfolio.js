@@ -9,6 +9,7 @@ import jate from "../../Images/jate.jpeg";
 import JSQuiz from "../../Images/jsQuiz.jpeg";
 import weatherDashboard from "../../Images/weatherDashboard.jpeg";
 import noteTaker from "../../Images/noteTaker.jpeg";
+import drillSergeant from "../../Images/drillSergeant.jpeg";
 
 export default function Portfolio() {
   // the array of objects used to build each individual project in the portfolio page
@@ -18,6 +19,18 @@ export default function Portfolio() {
       deployed: "https://muniz-tech-blog-62e3233fa5a7.herokuapp.com/",
       github: "https://github.com/Evermuniz/Tech-Blog",
       image: techBlog,
+    },
+    {
+      name: "PWA Text Editor",
+      deployed: "https://pwa-jate-2023-7c576433adaf.herokuapp.com/",
+      github: "https://github.com/Evermuniz/PWA-Text-Editor",
+      image: jate,
+    },
+    {
+      name: "Drill Sergeant",
+      deployed: "https://evermuniz.github.io/JS-Fundamentals-Quiz/",
+      github: "https://drill-sergeant-dda0cd61e869.herokuapp.com/",
+      image: drillSergeant,
     },
     {
       name: "Become",
@@ -36,18 +49,6 @@ export default function Portfolio() {
       deployed: "https://evermuniz.github.io/Weather-Dashboard/",
       github: "https://github.com/Evermuniz/Weather-Dashboard",
       image: weatherDashboard,
-    },
-    {
-      name: "PWA Text Editor",
-      deployed: "https://pwa-jate-2023-7c576433adaf.herokuapp.com/",
-      github: "https://github.com/Evermuniz/PWA-Text-Editor",
-      image: jate,
-    },
-    {
-      name: "JavaScript Quiz",
-      deployed: "https://evermuniz.github.io/JS-Fundamentals-Quiz/",
-      github: "https://github.com/Evermuniz/JS-Fundamentals-Quiz",
-      image: JSQuiz,
     },
   ];
 

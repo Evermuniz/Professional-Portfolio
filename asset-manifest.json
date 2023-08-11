@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/Professional-Portfolio/static/css/main.28f44685.css",
-    "main.js": "/Professional-Portfolio/static/js/main.7fe53173.js",
+    "main.js": "/Professional-Portfolio/static/js/main.34cff3f9.js",
+    "static/media/drillSergeant.jpeg": "/Professional-Portfolio/static/media/drillSergeant.cfbf396a880e6ceda259.jpeg",
     "static/media/weatherDashboard.jpeg": "/Professional-Portfolio/static/media/weatherDashboard.2e4f163ff43404874b33.jpeg",
     "static/media/headshot.jpeg": "/Professional-Portfolio/static/media/headshot.57578c7e835583208d6c.jpeg",
     "static/media/become.jpeg": "/Professional-Portfolio/static/media/become.a4beea586331c87fdc06.jpeg",
@@ -19,10 +20,10 @@
     "static/media/pc-display.svg": "/Professional-Portfolio/static/media/pc-display.6cb11c01e4f9578cea3bde90074b4c72.svg",
     "static/media/arrow-down-up.svg": "/Professional-Portfolio/static/media/arrow-down-up.94dfb5ff39ed6b69b726a62ec0bf3f48.svg",
     "main.28f44685.css.map": "/Professional-Portfolio/static/css/main.28f44685.css.map",
-    "main.7fe53173.js.map": "/Professional-Portfolio/static/js/main.7fe53173.js.map"
+    "main.34cff3f9.js.map": "/Professional-Portfolio/static/js/main.34cff3f9.js.map"
   },
   "entrypoints": [
     "static/css/main.28f44685.css",
-    "static/js/main.7fe53173.js"
+    "static/js/main.34cff3f9.js"
   ]
 }
